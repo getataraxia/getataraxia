@@ -1,0 +1,85 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["airbnb", "plugin:@typescript-eslint/recommended", "plugin:import/errors", "plugin:import/warnings", "plugin:import/typescript"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier"],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {},
+      "babel-module": {},
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "paths": ["pageBundles"]
+      }
+    },
+    "import/extensions": [
+      ".ts",
+      ".tsx",
+      ".js",
+      ".jsx"
+    ]
+  },
+  "rules": {
+    "import/prefer-default-export": 0,
+    "import/no-cycle": 0,
+    "linebreak-style": 0,
+    "no-tabs": 0,
+    "react/no-unescaped-entities": 0,
+    "implicit-arrow-linebreak": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/destructuring-assignment": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "react/jsx-filename-extension": [1, {
+      "extensions": [".tsx"]
+    }],
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/no-empty-function": 0,
+    "@typescript-eslint/camelcase": 0,
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": 2,
+    "import/no-named-as-default": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "no-shadow": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "react/no-access-state-in-setstate": 0,
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "react/jsx-fragments": "off",
+    "no-trailing-spaces": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/prop-types": "off",
+    "comma-dangle": 0,
+    "object-curly-newline": 0
+}
+}
