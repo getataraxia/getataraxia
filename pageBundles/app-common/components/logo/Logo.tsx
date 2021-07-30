@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { StyledLogo } from '../header/styles';
+import { StyledLogo } from './Logo.styles'
 
 const Logo = () => {
   return (
