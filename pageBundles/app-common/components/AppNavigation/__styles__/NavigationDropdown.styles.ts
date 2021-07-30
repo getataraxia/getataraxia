@@ -58,7 +58,7 @@ export const StyledNavigationDropdown = styled.nav<{ toggler: boolean }>`
     a {
       padding: 20px;
       font-weight: 600;
-      font-size: ${setRem(28)};
+      font-size: ${setRem(30)};
       text-decoration: none;
       color: ${(p) => p.theme.colors.colorText};
       display: block;

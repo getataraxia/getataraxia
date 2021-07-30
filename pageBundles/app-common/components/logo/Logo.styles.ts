@@ -9,6 +9,7 @@ export const StyledLogo = styled.a`
   font-weight: 700;
   font-size: ${setRem(35)};
   color: ${(p) => p.theme.colors.colorPrimary1};
+  text-overflow: nowrap;
 
   ${isSmallPhone(css`
     font-size: ${setRem(32)};

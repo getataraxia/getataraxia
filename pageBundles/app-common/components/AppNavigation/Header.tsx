@@ -1,12 +1,12 @@
 import React from 'react';
-import Logo from '../logo/Logo';
+import Logo from '../Logo/Logo';
 import RightHeader from './RightHeader';
 import { HeaderWrapper, StyledHeader } from './__styles__/Header.styles';
 import NavigationDropdown from './NavigationDropdown';
 
 const Header = () => {
   return (
-    <div>
+    <>
       <HeaderWrapper>
         <StyledHeader>
           <Logo />
@@ -14,7 +14,7 @@ const Header = () => {
         </StyledHeader>
       </HeaderWrapper>
       <NavigationDropdown />
-    </div>
+    </>
   );
 };
 

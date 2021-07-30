@@ -1,13 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { Menu, StyledNavigationDropdown } from './__styles__/NavigationDropdown.styles';
 import { navigationData } from './navigation-data';
 
 const NavigationDropdown = () => {
+  const menuRef = useRef(null);
   const [toggler, setToggler] = useState(false);
 
-  const handleClickMenu = () => {
-    setToggler((prev) => !prev);
+  const handleClickMenu = (e: Event) => {
+    if ((menuRef?.current as any)?.contains(e.target)) {
+      setToggler((prev) => !prev);
+    } else {
+      setToggler((prev) => prev ? false : false);
+    }
   };
 
   useEffect(() => {
@@ -19,7 +24,7 @@ const NavigationDropdown = () => {
 
   return (
     <>
-      <Menu toggler={toggler}>
+      <Menu ref={menuRef} toggler={toggler}>
         <span className="material-icons">menu</span>
       </Menu>
       <StyledNavigationDropdown toggler={toggler}>

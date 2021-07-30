@@ -34,7 +34,7 @@ const Globals = createGlobalStyle`
     background: ${({ theme: { colors } }) => colors.colorTextWhite};
     font-family: ${setFont.main};
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 1.5;
     min-height: 100vh;
   };
 
