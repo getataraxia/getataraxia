@@ -1,8 +1,8 @@
 import { setFlex, setRem } from 'app-common/globalStyles/variables';
 import React from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
 import styled, { css } from 'styled-components';
-import Logo from '../Logo/Logo';
+import Logo from '../logo/Logo';
 import { isPhoneOrSmaller } from 'app-common/globalStyles/screens';
 
 const FooterContainer = styled.div`
@@ -50,6 +50,7 @@ const NavigationColum = styled.div`
     font-size: ${setRem(28)};
     font-weight: 500;
     margin: 0.5rem 0;
+    color: ${(p) => p.theme.colors.colorPrimary1};
   }
 
   ${isPhoneOrSmaller(css`
