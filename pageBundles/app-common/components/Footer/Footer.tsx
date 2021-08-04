@@ -2,7 +2,7 @@ import { setFlex, setRem } from 'app-common/globalStyles/variables';
 import React from 'react';
 import Link from 'next/link'
 import styled, { css } from 'styled-components';
-import Logo from '../Logo/Logo';
+import Logo from '../logo/Logo';
 import { isPhoneOrSmaller } from 'app-common/globalStyles/screens';
 
 const FooterContainer = styled.div`
