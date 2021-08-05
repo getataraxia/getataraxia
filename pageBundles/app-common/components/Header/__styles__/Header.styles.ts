@@ -1,10 +1,10 @@
-import { setFlex, setFont, setRem, setZindex } from "app-common/globalStyles/variables";
+import { setFlex, setFont, setZindex } from "app-common/globalStyles/variables";
 import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
   width: full-width;
   position: relative;
-  height: 97px;
+  height: 70px;
   display: flex;
 `;
 

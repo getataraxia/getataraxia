@@ -1,8 +1,7 @@
-import { setFlex, setRem } from 'app-common/globalStyles/variables';
 import React from 'react';
 import Link from 'next/link';
 import styled, { css } from 'styled-components';
-import Logo from '../logo/Logo';
+import Logo from './Logo';
 import { isPhoneOrSmaller } from 'app-common/globalStyles/screens';
 
 const FooterContainer = styled.div`
@@ -41,13 +40,13 @@ const NavigationColum = styled.div`
   flex: 1;
 
   .Nav-head {
-    font-weight: bold;
-    font-size: ${setRem(34)};
+    font-weight: 500;
+    font-size: 2.4rem;
   }
 
   a {
     text-decoration: none;
-    font-size: ${setRem(28)};
+    font-size: 2rem;
     font-weight: 500;
     margin: 0.5rem 0;
     color: ${(p) => p.theme.colors.colorPrimary1};
@@ -61,7 +60,7 @@ const NavigationColum = styled.div`
 const Footer = () => {
   return (
     <>
-      <FooterContainer>
+      <FooterContainer id="mission">
         <div className="app-logo">
           <Logo />
         </div>

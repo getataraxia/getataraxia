@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { StyledRightNav } from './__styles__/RightHeader.styles';
-import { navigationData } from './navigation-data';
+import { navigationData } from './header-data';
 
 const RightHeader = () => (
   <StyledRightNav>

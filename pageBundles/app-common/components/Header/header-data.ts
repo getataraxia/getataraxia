@@ -1,11 +1,11 @@
 export const navigationData = [
   {
     menu: 'Mission',
-    link: '/mission',
+    link: '#/mission',
   },
   {
     menu: 'Products',
-    link: '/products',
+    link: '#/products',
   },
   {
     menu: 'Blog',

@@ -83,8 +83,6 @@ export const setBackground = ({
 } = {}) => `background: linear-gradient(${color}, ${color}),
     url(${img}) center/cover fixed no-repeat`;
 
-export const setRem = (number = 16) => `${number / 16}rem`;
-
 export const setLetterSpacing = (number = 2) => `letter-spacing: ${number}px`;
 
 export const setShadow = {

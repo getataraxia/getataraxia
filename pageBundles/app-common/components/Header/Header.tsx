@@ -1,8 +1,8 @@
 import React from 'react';
-import Logo from '../logo/Logo';
+import Logo from '../Logo';
 import RightHeader from './RightHeader';
 import { HeaderWrapper, StyledHeader } from './__styles__/Header.styles';
-import NavigationDropdown from './NavigationDropdown';
+import NavigationDropdown from './HeaderDropdown';
 
 const Header = () => {
   return (

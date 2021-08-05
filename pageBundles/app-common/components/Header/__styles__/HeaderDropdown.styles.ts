@@ -1,5 +1,5 @@
 import { isPhoneOrSmaller } from "app-common/globalStyles/screens";
-import { setFlex, setRem, setZindex } from "app-common/globalStyles/variables";
+import { setFlex, setZindex } from "app-common/globalStyles/variables";
 import styled, { css } from "styled-components";
 
 export const Menu = styled.button<{ toggler: boolean }>`
@@ -57,8 +57,8 @@ export const StyledNavigationDropdown = styled.nav<{ toggler: boolean }>`
 
     a {
       padding: 20px;
-      font-weight: 600;
-      font-size: ${setRem(30)};
+      font-weight: 500;
+      font-size: 2rem;
       text-decoration: none;
       color: ${(p) => p.theme.colors.colorText};
       display: block;

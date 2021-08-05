@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import { Menu, StyledNavigationDropdown } from './__styles__/NavigationDropdown.styles';
-import { navigationData } from './navigation-data';
+import { Menu, StyledNavigationDropdown } from './__styles__/HeaderDropdown.styles';
+import { navigationData } from './header-data';
 
 const NavigationDropdown = () => {
   const menuRef = useRef(null);
