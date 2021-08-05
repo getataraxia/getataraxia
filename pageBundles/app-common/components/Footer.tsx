@@ -71,24 +71,20 @@ const Footer = () => {
             <Link href="#">
               <a>About</a>
             </Link>
-            <Link href="#">
+            <Link href="/blog">
               <a>Blog</a>
             </Link>
           </NavigationColum>
           <NavigationColum>
             <span className="Nav-head">Products</span>
-            <Link href="#">
-              <a>Stoic Bible</a>
-            </Link>
+            <a href="https://stoicbible.com" target="_blank">Stoic Bible</a>
           </NavigationColum>
           <NavigationColum>
             <span className="Nav-head">Company</span>
             <Link href="#">
               <a>Careers</a>
             </Link>
-            <Link href="#">
-              <a>Twitter</a>
-            </Link>
+            <a href="https://twitter.com/getataraxia" target="_blank">Twitter</a>
           </NavigationColum>
         </NavContainer>
       </FooterContainer>
