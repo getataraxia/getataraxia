@@ -38,6 +38,17 @@
     "react/jsx-filename-extension": [1, {
       "extensions": [".tsx"]
     }],
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "arrow-body-style": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "max-len": "off",
+    "semi": "off",
+    "object-curly-spacing": "off",
+    "import/newline-after-import": "off",
+    "react/jsx-curly-brace-presence": "off",
     "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/no-empty-function": 0,
     "@typescript-eslint/camelcase": 0,

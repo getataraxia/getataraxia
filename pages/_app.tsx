@@ -4,7 +4,11 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from 'app-common/globalStyles';
 import { lightTheme } from 'app-common/globalStyles/variables';
-import {NextSeo} from 'next-seo';
+import { NextSeo } from 'next-seo';
+
+// Type workaround for styled-components
+const StyledThemeProvider = ThemeProvider as any;
+const StyledGlobalStyles = GlobalStyles as any;
 interface Props {
   pageProps: any;
   Component: any;
@@ -33,10 +37,10 @@ export class AtaraxiaApp extends App<Props> {
             cardType: 'app',
           }}
         />
-        <ThemeProvider theme={lightTheme}>
-          <GlobalStyles />
+        <StyledThemeProvider theme={lightTheme}>
+          <StyledGlobalStyles />
           <Component {...pageProps} />
-        </ThemeProvider>
+        </StyledThemeProvider>
       </>
     );
   }

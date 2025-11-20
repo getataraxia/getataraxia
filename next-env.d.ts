@@ -1,34 +1,5 @@
-// / <reference types="next" />
-// / <reference types="next/types/global" />
-import "next";
-import "styled-components";
+/// <reference types="next" />
+/// <reference types="next/image-types/global" />
 
-declare module "next" {
-  export interface NextPageContext {
-    reduxStore: any;
-  }
-}
-
-declare module "react" {
-  interface Attributes {
-    css?: CSSProp;
-  }
-}
-
-// and extend it
-declare module "styled-components" {
-  interface DefaultTheme {
-    isDarkTheme?: boolean;
-    colors: {
-      colorPrimary1: string;
-      colorSuccess: string;
-      mainRed: string;
-      lightRed: string;
-      colorTitle: string;
-      colorText: string;
-      colorTextWhite: string;
-      colorTextDisabled: string;
-      silverGrey: string;
-    };
-  }
-}
+// NOTE: This file should not be edited
+// see https://nextjs.org/docs/basic-features/typescript for more information.
