@@ -5,7 +5,7 @@ import Footer from 'app-common/components/Footer';
 import { setFont } from 'app-common/globalStyles/variables';
 import { isPhoneOrSmaller } from 'app-common/globalStyles/screens';
 
-const LAST_UPDATED = 'September 26, 2026';
+const LAST_UPDATED = 'September 27, 2026';
 
 const Page = styled.div`
   min-height: 100vh;
@@ -234,8 +234,41 @@ const InvestMathPrivacyPage: React.FC = () => {
             </ListItem>
             <ListItem>Purchase Remove Ads to stop seeing ads.</ListItem>
             <ListItem>
-              Contact us to request access to or deletion of analytics data associated with your
-              installation.
+              Request access to or deletion of analytics data as described in Deleting your data
+              below.
+            </ListItem>
+          </List>
+        </Section>
+
+        <Section id="delete-data">
+          <SectionTitle>Deleting your data</SectionTitle>
+          <List>
+            <ListItem>
+              <strong>Data on your device:</strong> delete saved calculations in InvestMath, or
+              uninstall the app to remove everything it stores on your device.
+            </ListItem>
+            <ListItem>
+              <strong>Analytics data:</strong> email{' '}
+              <ExternalLink href="mailto:support@getataraxia.com?subject=InvestMath%20data%20deletion">
+                support@getataraxia.com
+              </ExternalLink>{' '}
+              with the subject &ldquo;InvestMath data deletion&rdquo; and include the Support ID
+              shown in InvestMath under Settings &gt; About InvestMath. We delete the analytics data
+              linked to that ID within 30 days and confirm by email.
+            </ListItem>
+            <ListItem>
+              <strong>What is kept:</strong> reports aggregated across many users, which cannot
+              identify you. Records of the Remove Ads purchase are kept by Apple or Google and by
+              RevenueCat for as long as needed to validate and restore the purchase and to meet tax
+              obligations. Advertising data is controlled by Google; see Google&apos;s{' '}
+              <ExternalLink
+                href="https://policies.google.com/technologies/ads"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                advertising controls
+              </ExternalLink>
+              .
             </ListItem>
           </List>
         </Section>
